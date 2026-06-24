@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.flex-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.menu nav {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #f2c94c;
+}
+
+.area-principal {
+    flex: 1;
+    display: flex;
+}
+
+.flex-item {
+    padding: 24px;
+}
+
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar h3 {
+    color: #f2c94c;
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: #00ffcc;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #242424;
+}
+
+.sidebar a:hover,
+.sidebar a.ativo {
+    color: #ff4fd8;
+}
+
+.conteudo {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+}
+
+.conteudo h1 {
+    margin-bottom: 12px;
+}
+
+.conteudo p {
+    color: #444;
+    line-height: 1.5;
+}
+
+.inicio {
+    background-color: #171127;
+    color: white;
+}
+
+.inicio h1 {
+    color: #f2c94c;
+    font-size: 42px;
+}
+
+.inicio p {
+    max-width: 620px;
+    color: #e7e7e7;
+    font-size: 18px;
+}
+
+.rodape {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.redes-sociais a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.redes-sociais a:hover {
+    color: #111;
+    background-color: #f2c94c;
+    border-color: #f2c94c;
+}
+
+.pagina-generos {
+    background: #171127;
+    color: white;
+}
+
+.titulo-pagina {
+    margin-bottom: 28px;
+}
+
+.titulo-pagina span {
+    color: #00ffcc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.titulo-pagina h1 {
+    margin: 8px 0 10px;
+    color: #f2c94c;
+}
+
+.titulo-pagina p {
+    max-width: 720px;
+    color: #e7e7e7;
+}
+
+.rankings {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.ranking-card {
+    flex: 1;
+    padding: 22px;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    background-color: #0c0c16;
+}
+
+.ranking-card h2 {
+    margin-bottom: 18px;
+    color: #ff4fd8;
+}
+
+.ranking-card ol {
+    padding-left: 22px;
+}
+
+.ranking-card li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #292940;
+}
+
+.ranking-card li strong {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.ranking-card li span {
+    color: #00ffcc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.grade-consoles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.console-card {
+    min-height: 170px;
+    padding: 22px;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    background-color: #0c0c16;
+}
+
+.console-card h2 {
+    margin-bottom: 12px;
+    color: #ff4fd8;
+    font-size: 28px;
+}
+
+.console-card p {
+    color: #e7e7e7;
+    line-height: 1.5;
+}
+
+.grade-jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.jogos-card {
+    padding: 22px;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    background-color: #0c0c16;
+}
+
+.jogos-card h2 {
+    margin-bottom: 14px;
+    color: #ff4fd8;
+    font-size: 28px;
+}
+
+.jogos-card ul {
+    padding-left: 20px;
+}
+
+.jogos-card li {
+    margin-bottom: 10px;
+    color: #e7e7e7;
+}
+
+.galeria-jogos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 560px;
+    margin: 26px 0 0;
+    padding: 16px;
+    background-color: #0c0c16;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+}
+
+.jogos-img {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border: 1px solid #292940;
+    border-radius: 6px;
+    background-color: #111;
+}
+
+.jogos-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.jogos-img:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .menu {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .menu nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .area-principal {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .rankings {
+        flex-direction: column;
+    }
+
+    .grade-consoles {
+        grid-template-columns: 1fr;
+    }
+
+    .grade-jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+
+    .inicio p {
+        font-size: 16px;
+    }
+
+    .galeria-jogos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        max-width: 100%;
+        padding: 12px;
+    }
+}
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.redes-sociais a {
+    color: #00ffcc;
+    text-decoration: none;
+
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.redes-sociais a:hover {
+    color: #111;
+    background-color: #f2c94c;
+    border-color: #f2c94c;}
+    .copyright {
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    justify-content: center;
+}
+.desenvolvido {
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    justify-content: center;
+}
+.flex-item.rodape {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
